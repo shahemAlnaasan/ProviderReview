@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/model.dart';
+import 'package:provider_review/provider_review/model.dart';
 
-class provider extends StatelessWidget {
-  const provider({super.key});
+class _Provider extends StatelessWidget {
+  const _Provider({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class provider extends StatelessWidget {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("${mymodel.name1}"),
+                Text(mymodel.name1),
                 MaterialButton(
                   onPressed: () {
                     mymodel.ChangeName1();

@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:provider_review/AddToCart/items.dart';
+import 'package:provider_review/add_to_cart/items.dart';
 
 class Cart extends ChangeNotifier {
-  List<Items> CartItems = [];
+  List<Items> cartItems = [];
   double Price = 0.0;
+
   void add(Items items) {
-    CartItems.add(items);
-    Price += items.Price;
+    cartItems.add(items);
+    Price += items.price;
     notifyListeners();
   }
 
   void remove(Items items) {
-    CartItems.remove(items);
+    cartItems.remove(items);
     notifyListeners();
   }
 
   int get count {
-    return CartItems.length;
+    return cartItems.length;
   }
 
-  double get TotalPrice {
+  double get totalPrice {
     return Price;
   }
 }

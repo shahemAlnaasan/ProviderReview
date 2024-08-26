@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_review/AddToCart/CartPage.dart';
-import 'package:provider_review/AddToCart/Class_Cart.dart';
-import 'package:provider_review/AddToCart/items.dart';
+import 'package:provider_review/add_to_cart/cart_page.dart';
+import 'package:provider_review/add_to_cart/class_cart.dart';
+import 'package:provider_review/add_to_cart/items.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,8 +10,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Items> items = [
-      Items(name: "S24", Price: 999),
-      Items(name: "Iphone 15 pro max", Price: 999)
+      Items(name: "S24", price: 999),
+      Items(name: "Iphone 15 pro max", price: 999)
     ];
     return Scaffold(
       appBar: AppBar(

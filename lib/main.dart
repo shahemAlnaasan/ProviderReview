@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_review/AddToCart/Class_Cart.dart';
-import 'package:provider_review/AddToCart/Home.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/ChangeNotifierProvider_and_Consumer.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/MultiProvider.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/ProviderReadAndWatch.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/Provider_Dot_OfContext.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/provider.dart';
-import 'package:provider_review/valueNotifier/ValueNotifier.dart';
+import 'package:provider_review/add_to_cart/class_cart.dart';
+import 'package:provider_review/add_to_cart/home.dart';
+import 'package:provider_review/provider_review/changeNotifierProvider_consumer_selector.dart';
+import 'package:provider_review/provider_review/multi_provider.dart';
+import 'package:provider_review/provider_review/context_read_and_watch.dart';
+import 'package:provider_review/provider_review/provider_dot_ofContext.dart';
+import 'package:provider_review/provider_review/provider.dart';
+import 'package:provider_review/value_notifier/value_notifier.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(

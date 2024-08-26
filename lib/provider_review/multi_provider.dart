@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/model.dart';
+import 'package:provider_review/provider_review/model.dart';
 
 class multiprovider extends StatelessWidget {
   const multiprovider({super.key});
@@ -45,7 +45,7 @@ class multiprovider extends StatelessWidget {
                     Text("${model.name1}"),
                     MaterialButton(
                       onPressed: () {
-                        model.ChangeName1();
+                        model.changeName1();
                       },
                       color: Colors.blue,
                       child: Text("Do Something"),

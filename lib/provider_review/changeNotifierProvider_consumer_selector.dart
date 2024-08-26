@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_review/ChangeNotifierAndConsumerAndSelector/model.dart';
+import 'package:provider_review/provider_review/model.dart';
 
 class ChangeNotifierAndConsumer extends StatelessWidget {
   const ChangeNotifierAndConsumer({super.key});
@@ -16,35 +16,35 @@ class ChangeNotifierAndConsumer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Selector<Model, int>(
-                selector: (context, modelS1) => modelS1.ShowOne,
+                selector: (context, modelS1) => modelS1.showOne,
                 builder: (context, model, child) {
                   print("Text");
                   return Text("$model");
                 }),
             Selector<Model, String>(
-                selector: (context, modelS2) => modelS2.ShowTwo,
+                selector: (context, modelS2) => modelS2.showTwo,
                 builder: (context, model, child) {
                   print("Text1");
-                  return Text("$model");
+                  return Text(model);
                 }),
             Consumer<Model>(builder: (context, model, child) {
               // print("button");
               return MaterialButton(
                 onPressed: () {
-                  model.ChangeName();
+                  model.changeName();
                 },
-                child: const Text("Do something"),
                 color: Colors.blue,
+                child: const Text("Do something"),
               );
             }),
             Consumer<Model>(builder: (context, model, child) {
               // print("button1");
               return MaterialButton(
                 onPressed: () {
-                  model.ChangeName1();
+                  model.changeName1();
                 },
-                child: Text("Do something"),
                 color: Colors.blue,
+                child: const Text("Do something"),
               );
             }),
           ],

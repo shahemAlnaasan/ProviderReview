@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:provider_review/valueNotifier/ClassValueNotifier.dart';
+import 'package:provider_review/value_notifier/class_value_notifier.dart';
 
 class Valuenotifier extends StatelessWidget {
   const Valuenotifier({super.key});
 
   @override
   Widget build(BuildContext context) {
-    MyValueNotifier ContollerNotifier = MyValueNotifier(0);
+    MyValueNotifier contollerNotifier = MyValueNotifier(0);
     return Scaffold(
       body: ValueListenableBuilder(
-        valueListenable: ContollerNotifier,
+        valueListenable: contollerNotifier,
         builder: (Context, controllerNotifier, child) {
           return Container(
             width: 1000,
@@ -17,12 +17,12 @@ class Valuenotifier extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "${ContollerNotifier.value}",
+                  "${contollerNotifier.value}",
                   style: TextStyle(fontSize: 30),
                 ),
                 MaterialButton(
                   onPressed: () {
-                    ContollerNotifier.increment();
+                    contollerNotifier.increment();
                   },
                   child: Text("Tap me"),
                 )
